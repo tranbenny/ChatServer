@@ -1,14 +1,15 @@
-import { server as _server } from 'hapi';
+const Hapi = require('hapi');
+const inert = require('inert');
+const SocketIO = require('socket.io');
 
-const server = _server({
+const server = Hapi.server({
     port: 3000,
     host: 'localhost',
 });
 
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: (request, h) => 'Hello World!',
+const io = SocketIO.listen(server.listener);
+io.sockets.on('connection', (socket) => {
+    socket.emit({ msg: 'welcome' });
 });
 
 server.route({
@@ -21,6 +22,12 @@ server.route({
 });
 
 const init = async () => {
+    await server.register(inert);
+    server.route({
+        method: 'GET',
+        path: '/',
+        handler: (request, h) => h.file('./index.html'),
+    });
     await server.start();
     console.log(`Server running at: ${server.info.uri}`);
 };
