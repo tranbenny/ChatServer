@@ -1,23 +1,26 @@
 {
-  "name": "MessengerAPI",
+  "name": "messengerapi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node index.js",
+    "test": "jasmine"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "app-root-path": "^2.1.0",
     "hapi": "^17.6.0",
     "inert": "^5.1.0",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.1.1",
+    "winston": "^3.1.0"
   },
   "devDependencies": {
     "eslint": "^5.7.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "jasmine": "^3.2.0"
   }
 }

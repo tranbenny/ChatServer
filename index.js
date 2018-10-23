@@ -1,6 +1,7 @@
 const Hapi = require('hapi');
-const inert = require('inert');
 const SocketIO = require('socket.io');
+const inert = require('inert');
+const logger = require('./config/logger');
 
 const server = Hapi.server({
     port: 3000,
@@ -29,11 +30,11 @@ const init = async () => {
         handler: (request, h) => h.file('./index.html'),
     });
     await server.start();
-    console.log(`Server running at: ${server.info.uri}`);
+    logger.info(`Server running at: ${server.info.uri}`);
 };
 
 process.on('unhandledRejection', (err) => {
-    console.log(err);
+    logger.error(err);
     process.exit(1);
 });
 

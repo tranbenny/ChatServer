@@ -1,20 +1,25 @@
-## Backend for Chat 
+# Backend for Chat
+
 -------------------------
 
 ### Project Setup
+
 - [x] ESLint
-- [ ] Testing
+- [x] Testing
+    - [ ] Jasmine Test Reporter
 - [ ] Development Config
-- [ ] Logging 
+- [x] Logging
 
 ### Design
+
 - [ ] DataStore
-- [ ] API Interface 
+- [ ] API Interface
 
-### Implementation 
+### Implementation
 
-### Deployment 
-- [ ] CI 
+### Deployment
+
+- [ ] CI
 - [ ] Automated Test w/ Build
 - [ ] Deploy App
 - [ ] Production Config
