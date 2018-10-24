@@ -16,6 +16,9 @@
 - [ ] API Interface
 
 ### Implementation
+- [ ] User Login
+- [ ] add User to chat message
+- [ ] Create front end app
 
 ### Deployment
 
