@@ -1,6 +1,7 @@
 # Backend for Chat
 
 -------------------------
+[![Build Status](https://travis-ci.org/tranbenny/ChatServer.svg?branch=master)](https://travis-ci.org/tranbenny/ChatServer)
 
 ### Project Setup
 
