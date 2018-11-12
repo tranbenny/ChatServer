@@ -2,7 +2,7 @@ const appRoot = require('app-root-path');
 
 const logger = require(`${appRoot}/src/config/logger`);
 
-// handle user disconnect events 
+// handle user disconnect events
 const disconectHandler = () => {
     logger.debug('user disconnected');
 };

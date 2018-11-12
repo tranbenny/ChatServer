@@ -23,7 +23,7 @@
 
 ### Deployment
 
-- [ ] CI
-- [ ] Automated Test w/ Build
+- [x] CI
+- [x] Automated Test w/ Build
 - [ ] Deploy App
 - [ ] Production Config
